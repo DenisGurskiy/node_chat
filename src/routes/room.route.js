@@ -4,6 +4,9 @@ const { catchError } = require('../utils/catch.error.js');
 
 const roomRouter = express.Router();
 
+// eslint-disable-next-line no-console
+console.log('Second_step room');
+
 roomRouter.get('/chatRooms', catchError(roomController.getRooms));
 
 roomRouter.get('/getRoom/:id', catchError(roomController.getRoomById));

@@ -6,6 +6,7 @@
 # Node
 node_modules
 client
+setup.js
 
 # MacOS
 .DS_Store

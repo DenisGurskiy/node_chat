@@ -1,10 +1,5 @@
 /* eslint-disable no-console */
 const roomService = require('../services/room.service.js');
-// const jwtService = require('../services/jwt.service.js');
-// const { ApiError } = require('../exceptions/api.error.js');
-// const validator = require('../utils/validation.js');
-// const bcrypt = require('bcrypt');
-// const emailService = require('../services/email.service.js');
 
 const getRooms = async (req, res) => {
   const rooms = await roomService.getAllRooms();

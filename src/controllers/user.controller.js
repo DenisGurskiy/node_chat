@@ -1,13 +1,10 @@
 /* eslint-disable no-console */
 const userService = require('../services/user.service.js');
-// const jwtService = require('../services/jwt.service.js');
-// const { ApiError } = require('../exceptions/api.error.js');
-// const validator = require('../utils/validation.js');
-// const bcrypt = require('bcrypt');
-// const emailService = require('../services/email.service.js');
 
 const login = async (req, res) => {
   const { name } = req.body;
+
+  console.log('Third_step login');
 
   const newUser = await userService.createUser(name);
 
