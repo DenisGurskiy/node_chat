@@ -2,6 +2,9 @@ const roomService = require('../services/room.service.js');
 const messageService = require('../services/message.service.js');
 
 const websocket = (wss) => {
+  // eslint-disable-next-line no-console
+  console.log('websocket_step');
+
   wss.on('connection', (connection) => {
     let roomId;
 
