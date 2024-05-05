@@ -11,7 +11,7 @@ const { errorMiddleware } = require('./middlewares/errorMiddleware.js');
 
 require('dotenv').config();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3005;
 const app = express();
 
 app.use(express.json());
@@ -29,8 +29,6 @@ app.use('/room', roomRouter);
 const server = app.listen(PORT, () => {
   console.log('Server is running on port: ', PORT);
 });
-
-console.log('First_step');
 
 const wss = new WebSocketServer({ server });
 
