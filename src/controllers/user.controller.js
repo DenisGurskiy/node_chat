@@ -4,8 +4,6 @@ const userService = require('../services/user.service.js');
 const login = async (req, res) => {
   const { name } = req.body;
 
-  console.log('Third_step login');
-
   const newUser = await userService.createUser(name);
 
   res.send(newUser);
